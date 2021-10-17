@@ -2,14 +2,6 @@
 
 package main
 
-import "fmt"
-
-func main() {
-	answers := []int{1, 2, 3, 4, 5, 1, 1, 1, 1, 1, 2, 3, 4, 1, 2, 3, 4}
-	who := solution(answers)
-	fmt.Println(who)
-}
-
 func solution(answers []int) []int {
 	people1 := [5]int{1, 2, 3, 4, 5}
 	people2 := [8]int{2, 1, 2, 3, 2, 4, 2, 5}
@@ -32,16 +24,6 @@ func solution(answers []int) []int {
 	max_correct_people = max(correct1, correct2)
 	max_correct_people = max(max_correct_people, correct3)
 
-	// golang 3항 연산가 없네
-	// if correct1 > correct2 {
-	// 	max_correct_people = correct1
-	// } else {
-	// 	max_correct_people = correct2
-	// }
-
-	// if correct1 > correct3 {
-
-	// }
 	who_max_correct_peple := []int{}
 	if max_correct_people == correct1 {
 		who_max_correct_peple = append(who_max_correct_peple, 1)
