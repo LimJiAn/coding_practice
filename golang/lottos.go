@@ -28,7 +28,7 @@ func main(lottos []int, win_nums []int) []int {
 		min = 3
 	} else if len(lucky) == 5 {
 		min = 2
-	} else if len(lucky) == 6 {
+	} else {
 		min = 1
 	}
 
